@@ -67,11 +67,12 @@ int main(int argc, char *argv[])
 
 	printf("Creating a new fs on dev %s (%" PRIu64 " blks)\n", dev, size/512);
 
-	printf("Warning: this could kill some important data; Are you sure? ");
-	char ch = getchar();
+	// printf("Warning: this could kill some important data; Are you sure? ");
+	printf("Warning: this could kill some important data;\n");
+	// char ch = getchar();
 
-	if (ch != 'y')
-		exit(0);
+	// if (ch != 'y')
+	// 	exit(0);
 
 	fp = fopen(dev, "r+");
 	if (!fp)
