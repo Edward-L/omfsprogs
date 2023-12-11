@@ -2,6 +2,7 @@
 #define _CONFIG_H
 
 #include <inttypes.h>
+#include <linux/types.h>
 
 typedef unsigned char u8;
 typedef uint16_t u16;
@@ -13,7 +14,7 @@ typedef int16_t s16;
 typedef int32_t s32;
 typedef int64_t s64;
 
-typedef u64 __be64;
+//typedef u64 __be64;
 typedef u32 __be32;
 typedef u16 __be16;
 
