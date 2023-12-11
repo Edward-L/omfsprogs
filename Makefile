@@ -54,5 +54,6 @@ distcheck: dist
 	cd $(DISTNAME) && $(MAKE) && \
 	cd test && $(MAKE)
 	$(RM) -r build
-
+install:
+	cp mkomfs /usr/local/sbin
 .PHONY:
